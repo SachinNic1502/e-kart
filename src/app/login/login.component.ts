@@ -19,7 +19,10 @@ export class LoginComponent {
     this.authService.login(this.username, this.password);
 
     if (this.authService.isLoggedIn) {
-      this.router.navigate(['/home']);
+      if(this.username=='user'&&this.password=='password')
+            this.router.navigate(['/home']);
+      else
+            alert("Error")
     }
   }
   loginWithOTP(){
@@ -27,4 +30,5 @@ export class LoginComponent {
     this.loginWithOTPSelected = !this.loginWithOTPSelected;
     alert("login with otp");
   }
+  
 }

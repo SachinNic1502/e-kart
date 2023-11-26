@@ -1,0 +1,24 @@
+<!-- slider.component.html -->
+
+<div class="carousel-container">
+    <div class="carousel-card">
+      <div class="card">
+        <img [src]="imagesWithText[currentIndex].image" class="card-img-top" alt="Slide">
+      </div>
+      <div class="carousel-buttons">
+        <button class="btn btn-light" (click)="showPrevious()" style="background-color: transparent; border: none;">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="btn btn-light" (click)="showNext()" style="background-color: transparent; border: none;">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="shop-now-button">
+        <button class="btn btn-primary">Shop Now</button>
+      </div>
+      <div class="additional-text">
+        <p>{{ imagesWithText[currentIndex].text }}</p>
+      </div>
+    </div>
+  </div>
+  

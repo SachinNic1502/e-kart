@@ -1,0 +1,48 @@
+.carousel-container {
+    position: relative;
+    max-width: 100%; /* Set the maximum width to 100% */
+    margin: auto;
+    width: 100%; /* Set the width to 100% of the parent container */
+    height: 300px; /* Set the fixed height to 200px */
+  }
+  
+  
+  .carousel-card {
+    position: relative;
+    width: 100%;
+  }
+  .card-img, .card-img-top{
+    height: 300px;
+  }
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-buttons button {
+    font-size: 24px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: #0056b3;
+  }
+  .shop-now-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .additional-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #ee0c0c; /* Adjust the color as needed */
+  }

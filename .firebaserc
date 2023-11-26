@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "e-kart-28a7a": {
+      "hosting": {
+        "e-kart": [
+          "e-kart-28a7a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "e-kart-28a7a"
+  }
+}

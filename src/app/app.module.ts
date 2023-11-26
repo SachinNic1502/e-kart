@@ -6,10 +6,10 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
-import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { AuthGuard } from './AuthGuard/auth.guard';
-
+import { ProductComponent } from './home/product/product.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -17,13 +17,17 @@ import { AuthGuard } from './AuthGuard/auth.guard';
     LoginComponent,
     SignupComponent,
     ForgotPasswordComponent,
-    HomeComponent,
+    ProductComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CarouselModule,
+
+
+   
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
